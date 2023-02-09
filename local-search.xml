@@ -5,11 +5,68 @@
   
   <entry>
     <title></title>
-    <link href="/2023/02/08/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%80.%E8%AE%A4%E8%AF%86%E4%B8%BB%E9%A2%98/"/>
-    <url>/2023/02/08/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%80.%E8%AE%A4%E8%AF%86%E4%B8%BB%E9%A2%98/</url>
+    <link href="/2023/02/09/%E6%B3%A8%E5%86%8A%E6%B5%81%E7%A8%8B/%E9%98%BF%E9%87%8C%E9%9B%B2%E5%9C%8B%E9%9A%9B%E7%89%88%E6%B3%A8%E5%86%8A/"/>
+    <url>/2023/02/09/%E6%B3%A8%E5%86%8A%E6%B5%81%E7%A8%8B/%E9%98%BF%E9%87%8C%E9%9B%B2%E5%9C%8B%E9%9A%9B%E7%89%88%E6%B3%A8%E5%86%8A/</url>
+    
+    <content type="html"><![CDATA[<hr><h2 id="title-一-阿里雲國際版注冊categories-注冊"><a href="#title-一-阿里雲國際版注冊categories-注冊" class="headerlink" title="title: 一.阿里雲國際版注冊categories:- 注冊"></a>title: 一.阿里雲國際版注冊<br>categories:<br>- 注冊</h2><p>一.訪問 注冊 頁面<br><a href="https://account.alibabacloud.com/register/intl_register.htm?spm=a2c45.11132017.2.2.571f525cBZfGx9&lang=zh_CN&oauth_callback=https://account-intl.console.aliyun.com/?spm=a2798.12277262.6791778070.48.3e6f5599kgFue5%23/delete">https://account.alibabacloud.com/register/intl_register.htm?spm=a2c45.11132017.2.2.571f525cBZfGx9&amp;lang=zh_CN&amp;oauth_callback=https%3A%2F%2Faccount-intl.console.aliyun.com%2F%3Fspm%3Da2798.12277262.6791778070.48.3e6f5599kgFue5%23%2Fdelete</a></p><p>二、点击创建新账号，就会直接跳转到国际版阿里云的官网注册界面，右上角可以改变语言切换你最熟悉的就行，然后点击个人账号进行下一步：如图下<br><img src="/../../data/%E9%98%BF%E9%87%8C%E9%9B%B2%E5%9C%8B%E9%9A%9B/1.png" alt="1"><br>三、填写好邮箱密码 点击注册进行下一步：如图下<br><img src="/../../data/%E9%98%BF%E9%87%8C%E9%9B%B2%E5%9C%8B%E9%9A%9B/2.png" alt="2"><br>四、输入国家&#x2F;地区和验证码：需要注意就是地区选择一定要和手机号码一致哦，不然无法在官网下单哦，如图下<br><img src="/../../data/%E9%98%BF%E9%87%8C%E9%9B%B2%E5%9C%8B%E9%9A%9B/3.png" alt="3"><br>五、注册到这里就已经注册成功， 但是要购买阿里云服务或开启免费试用前，还是需要继续完善以下信息，如图下<br><img src="/../../data/%E9%98%BF%E9%87%8C%E9%9B%B2%E5%9C%8B%E9%9A%9B/4.png" alt="4"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>三.製作側邊欄 sidebar.php</title>
+    <link href="/2023/02/09/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%89%E8%A3%BD%E4%BD%9C%E5%81%B4%E9%82%8A%E6%AC%84%20(sidebar)/"/>
+    <url>/2023/02/09/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%89%E8%A3%BD%E4%BD%9C%E5%81%B4%E9%82%8A%E6%AC%84%20(sidebar)/</url>
     
     <content type="html"><![CDATA[]]></content>
     
+    
+    <categories>
+      
+      <category>PHP主题开发asd</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>二.製作首頁的主體部分</title>
+    <link href="/2023/02/09/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E8%A3%BD%E4%BD%9C%E9%A6%96%E9%A0%81%E7%9A%84%E4%B8%BB%E9%AB%94%E9%83%A8%E5%88%86/"/>
+    <url>/2023/02/09/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E8%A3%BD%E4%BD%9C%E9%A6%96%E9%A0%81%E7%9A%84%E4%B8%BB%E9%AB%94%E9%83%A8%E5%88%86/</url>
+    
+    <content type="html"><![CDATA[<h1 id="文章列表"><a href="#文章列表" class="headerlink" title="文章列表"></a>文章列表</h1><p>–<br>##在首頁遍历输出文章列表使用这段代码：<br><code>while (have_posts()) &#123;     the_post(); // 獲取文章信息     teh_title(); //輸出標題 &#125;</code><br>这组代码一般都一起配套使用的。在首页，分类页等展示文章列表的页面，它会根据你后台设置的展现数量获取文章的数量。如果是文章详情页，使用这段代码则只会获取到一篇文章的信息。</p><p>现在这段代码，执行完the_post() 后，只是获取到了文章信息。还没有展示在网站上面。</p><p>现在在网站上展示我们需要的信息。</p><h2 id="先認識幾個函數"><a href="#先認識幾個函數" class="headerlink" title="先認識幾個函數"></a>先認識幾個函數</h2><pre><code class="hljs">1：the_title();獲取文章的標題2：the_excerpt(); 獲取文章的摘要3：get_permalink(); 獲取文章的鏈接</code></pre><h2 id="模板-在根目錄創建-模板文件夾-template-x2F-模板文件"><a href="#模板-在根目錄創建-模板文件夾-template-x2F-模板文件" class="headerlink" title="模板 在根目錄創建 模板文件夾(template)&#x2F;模板文件"></a>模板 在根目錄創建 模板文件夾(template)&#x2F;模板文件</h2><p>引入模板文件   get_template_part( ‘template&#x2F;模板文件’);</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>PHP主题开发asd</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>一.PHP主题开发教学</title>
+    <link href="/2023/02/08/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%80PHP%E4%B8%BB%E9%A1%8C%E9%96%8B%E7%99%BC%E6%95%99%E5%AD%B8/"/>
+    <url>/2023/02/08/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%80PHP%E4%B8%BB%E9%A1%8C%E9%96%8B%E7%99%BC%E6%95%99%E5%AD%B8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一-学PHP主题开发的理由"><a href="#一-学PHP主题开发的理由" class="headerlink" title="一.学PHP主题开发的理由"></a>一.学PHP主题开发的理由</h1><pre><code class="hljs">熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手</code></pre><h1 id="二-开始学习"><a href="#二-开始学习" class="headerlink" title="二.开始学习"></a>二.开始学习</h1><p>–</p><h3 id="模板添加-你网站根目录-wp-content-x2F-themes-x2F-新建主题文件"><a href="#模板添加-你网站根目录-wp-content-x2F-themes-x2F-新建主题文件" class="headerlink" title="模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件"></a>模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件</h3><h2 id="最基础的wordperss-主题开发只需要两个文件"><a href="#最基础的wordperss-主题开发只需要两个文件" class="headerlink" title="最基础的wordperss 主题开发只需要两个文件"></a>最基础的wordperss 主题开发只需要两个文件</h2><pre><code class="hljs">index.php - 主题模版开发style.css - 主样式文件</code></pre><h2 id="文件作用"><a href="#文件作用" class="headerlink" title="文件作用"></a>文件作用</h2><h3 id="functions-php-菜单"><a href="#functions-php-菜单" class="headerlink" title="functions.php 菜单"></a>functions.php 菜单</h3><h3 id="css沒生效的處理方法應用-css-文件"><a href="#css沒生效的處理方法應用-css-文件" class="headerlink" title="css沒生效的處理方法應用 css 文件"></a>css沒生效的處理方法應用 css 文件</h3><figure class="highlight php-template"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php-template"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&#x27;stylesheet&#x27;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="language-php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">get_template_directory_uri</span>(); <span class="hljs-meta">?&gt;</span></span><span class="language-xml"><span class="hljs-tag"><span class="hljs-string">/styl.css&quot;</span>&gt;</span></span><br></code></pre></td></tr></table></figure><h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">get_header</span>(); <span class="hljs-meta">?&gt;</span>  <span class="hljs-comment">// 導入 請求頭 跟index.php統同級目錄下 創建 跟index.php 跟index.php寫底部信息</span><br><br>  &lt;div&gt;主体区域&lt;/div&gt;<br><br><br><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">get_footer</span>(); <span class="hljs-meta">?&gt;</span> <span class="hljs-comment">//導入 底部信息 跟index.php統同級目錄下 創建 footer.php 在footer.php寫底部信息</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>PHP主题开发asd</category>
+      
+    </categories>
     
     
   </entry>
