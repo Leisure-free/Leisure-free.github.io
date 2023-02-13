@@ -16,21 +16,26 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一.学PHP主题开发的理由熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手  二.开始学习– 模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件最基础的wordperss 主题开发只需要两个文件index.php - 主题模版开发 style.css - 主样式文件  文件作用functions.php 菜单css沒生效的處理方法應用 css">
+    <meta name="description" content="下載插件 JWT Authentication for WP REST API方式一：官網下載插件鏈接：https:&#x2F;&#x2F;wordpress.org&#x2F;plugins&#x2F;jwt-authentication-for-wp-rest-api&#x2F; 方式二：wordpress下載    打開項目根目錄&#x2F;wp-config.php 添加配置文件&#96;define(&#39;JWT_AUTH_SECRET_K">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一.PHP主题开发教学">
-<meta property="og:url" content="http://example.com/2023/02/08/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%80PHP%E4%B8%BB%E9%A1%8C%E9%96%8B%E7%99%BC%E6%95%99%E5%AD%B8/index.html">
+<meta property="og:title" content="jwt插件獲取api的token">
+<meta property="og:url" content="http://example.com/2023/02/11/wordpress/wp_rest_api/jwt-%E7%8D%B2%E5%8F%96token/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一.学PHP主题开发的理由熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手  二.开始学习– 模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件最基础的wordperss 主题开发只需要两个文件index.php - 主题模版开发 style.css - 主样式文件  文件作用functions.php 菜单css沒生效的處理方法應用 css">
+<meta property="og:description" content="下載插件 JWT Authentication for WP REST API方式一：官網下載插件鏈接：https:&#x2F;&#x2F;wordpress.org&#x2F;plugins&#x2F;jwt-authentication-for-wp-rest-api&#x2F; 方式二：wordpress下載    打開項目根目錄&#x2F;wp-config.php 添加配置文件&#96;define(&#39;JWT_AUTH_SECRET_K">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-08T07:05:12.725Z">
-<meta property="article:modified_time" content="2023-02-10T04:43:16.856Z">
+<meta property="og:image" content="http://example.com/data/wordpress-rest-api/1.png">
+<meta property="og:image" content="http://example.com/data/wordpress-rest-api/3.png">
+<meta property="og:image" content="http://example.com/data/wordpress-rest-api/2.png">
+<meta property="og:image" content="http://example.com/data/wordpress-rest-api/4.png">
+<meta property="article:published_time" content="2023-02-11T05:02:12.471Z">
+<meta property="article:modified_time" content="2023-02-11T07:43:20.925Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/data/wordpress-rest-api/1.png">
   
   
   
-  <title>一.PHP主题开发教学 - Hexo</title>
+  <title>jwt插件獲取api的token - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="一.PHP主题开发教学"></span>
+            <span id="subtitle" data-typed-text="jwt插件獲取api的token"></span>
           
         </div>
 
@@ -207,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-08 15:05" pubdate>
-          February 8, 2023 pm
+        <time datetime="2023-02-11 13:02" pubdate>
+          February 11, 2023 pm
         </time>
       </span>
     
@@ -219,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          489 words
+          1.1k words
         
       </span>
     
@@ -230,7 +235,7 @@
         
         
         
-          5 mins
+          10 mins
         
       </span>
     
@@ -268,19 +273,44 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">一.PHP主题开发教学</h1>
+            <h1 style="display: none">jwt插件獲取api的token</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="一-学PHP主题开发的理由"><a href="#一-学PHP主题开发的理由" class="headerlink" title="一.学PHP主题开发的理由"></a>一.学PHP主题开发的理由</h1><pre><code class="hljs">熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手
+                <h2 id="下載插件-JWT-Authentication-for-WP-REST-API"><a href="#下載插件-JWT-Authentication-for-WP-REST-API" class="headerlink" title="下載插件 JWT Authentication for WP REST API"></a>下載插件 JWT Authentication for WP REST API</h2><p>方式一：官網下載<br>插件鏈接：<a target="_blank" rel="noopener" href="https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/">https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/</a><br><img src="/../../../data/wordpress-rest-api/1.png" srcset="/img/loading.gif" lazyload alt="1"></p>
+<p>方式二：wordpress下載<br><img src="/../../../data/wordpress-rest-api/3.png" srcset="/img/loading.gif" lazyload alt="1"></p>
+<ul>
+<li></li>
+</ul>
+<h2 id="打開項目根目錄-x2F-wp-config-php-添加配置文件"><a href="#打開項目根目錄-x2F-wp-config-php-添加配置文件" class="headerlink" title="打開項目根目錄&#x2F;wp-config.php 添加配置文件"></a>打開項目根目錄&#x2F;wp-config.php 添加配置文件</h2><pre><code class="hljs">`define(&#39;JWT_AUTH_SECRET_KEY&#39;, &#39;your-top-secret-key&#39;);
+  define(&#39;JWT_AUTH_CORS_ENABLE&#39;, true);
+`
 </code></pre>
-<h1 id="二-开始学习"><a href="#二-开始学习" class="headerlink" title="二.开始学习"></a>二.开始学习</h1><p>–</p>
-<h3 id="模板添加-你网站根目录-wp-content-x2F-themes-x2F-新建主题文件"><a href="#模板添加-你网站根目录-wp-content-x2F-themes-x2F-新建主题文件" class="headerlink" title="模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件"></a>模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件</h3><h2 id="最基础的wordperss-主题开发只需要两个文件"><a href="#最基础的wordperss-主题开发只需要两个文件" class="headerlink" title="最基础的wordperss 主题开发只需要两个文件"></a>最基础的wordperss 主题开发只需要两个文件</h2><pre><code class="hljs">index.php - 主题模版开发
-style.css - 主样式文件
+<ul>
+<li>效果圖</li>
+</ul>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/../../../data/wordpress-rest-api/2.png" srcset="/img/loading.gif" lazyload alt="2"></h2><h2 id="设置永久链接（漂亮链接、固定连接）"><a href="#设置永久链接（漂亮链接、固定连接）" class="headerlink" title="设置永久链接（漂亮链接、固定连接）"></a>设置永久链接（漂亮链接、固定连接）</h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="/../../../data/wordpress-rest-api/4.png" srcset="/img/loading.gif" lazyload alt="2"></h2><h2 id="獲取-token"><a href="#獲取-token" class="headerlink" title="獲取 token"></a>獲取 token</h2><pre><code class="hljs"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> requests<br><br><br>data = &#123;<br>  <span class="hljs-string">&#x27;username&#x27;</span>: <span class="hljs-string">&#x27;your-username&#x27;</span>, <span class="hljs-comment"># 用户名</span><br>  <span class="hljs-string">&#x27;password&#x27;</span>: <span class="hljs-string">&#x27;your-password&#x27;</span><span class="hljs-comment">#用户密码</span><br>&#125;<br><span class="hljs-comment"># wplearning.org ： 你的域名</span><br>response = requests.post(<span class="hljs-string">&#x27;http://wplearning.org/wp-json/jwt-auth/v1/token&#x27;</span>, data=data)<br><br><span class="hljs-built_in">print</span>(response.json()[<span class="hljs-string">&#x27;token&#x27;</span>])<br></code></pre></td></tr></table></figure>
 </code></pre>
-<h2 id="文件作用"><a href="#文件作用" class="headerlink" title="文件作用"></a>文件作用</h2><h3 id="functions-php-菜单"><a href="#functions-php-菜单" class="headerlink" title="functions.php 菜单"></a>functions.php 菜单</h3><h3 id="css沒生效的處理方法應用-css-文件"><a href="#css沒生效的處理方法應用-css-文件" class="headerlink" title="css沒生效的處理方法應用 css 文件"></a>css沒生效的處理方法應用 css 文件</h3><figure class="highlight php-template"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php-template"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&#x27;stylesheet&#x27;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="language-php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">get_template_directory_uri</span>(); <span class="hljs-meta">?&gt;</span></span><span class="language-xml"><span class="hljs-tag"><span class="hljs-string">/styl.css&quot;</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
-<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">get_header</span>(); <span class="hljs-meta">?&gt;</span>  <span class="hljs-comment">// 導入 請求頭 跟index.php統同級目錄下 創建 跟index.php 跟index.php寫底部信息</span><br><br>  &lt;div&gt;主体区域&lt;/div&gt;<br><br><br><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">get_footer</span>(); <span class="hljs-meta">?&gt;</span> <span class="hljs-comment">//導入 底部信息 跟index.php統同級目錄下 創建 footer.php 在footer.php寫底部信息</span><br></code></pre></td></tr></table></figure>
+<h2 id="驗證-token"><a href="#驗證-token" class="headerlink" title="驗證 token"></a>驗證 token</h2><ul>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs python"><br><span class="hljs-keyword">import</span> requests<br><br><br>token = <span class="hljs-string">&#x27;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbmZ0dG9vbHMuYWkiLCJpYXQiOjE2NzU2NzAzMDcsIm5iZiI6MTY3NTY3MDMwNywiZXhwIjoxNjc2Mjc1MTA3LCJkYXRhIjp7InVzZXIiOnsiaWQiOiIyIn19fQ.3QYTRAzUHk05mxZPoqhyvS_uNako3o9cxisSJptxzB4&#x27;</span><br>headers = &#123;<br><br>    <span class="hljs-string">&#x27;Authorization&#x27;</span>: <span class="hljs-string">&#x27;Bearer &#x27;</span> +token,<br><br>&#125;<br><br>response = requests.post(<span class="hljs-string">&#x27;http://wplearning.org/wp-json/jwt-auth/v1/token/validate&#x27;</span>, headers=headers)<br><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="常见问题汇总："><a href="#常见问题汇总：" class="headerlink" title="常见问题汇总："></a>常见问题汇总：</h2><ul>
+<li><ul>
+<li>忘記添加配置</li>
+<li>忘記設置榮就鏈接</li>
+<li>發送請求忘記添加用戶跟密碼</li>
+<li>鏈接輸入錯誤</li>
+</ul>
+</li>
+</ul>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><ul>
+<li><ul>
+<li>發現問題不要慌、仔細檢查一邊、之後再慢慢慌</li>
+</ul>
+</li>
+</ul>
+
                 
               </div>
             
@@ -298,7 +328,7 @@ style.css - 主样式文件
     
       <span class="category-chain">
         
-  <a href="/categories/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/" class="category-chain-item">PHP主题开发</a>
+  <a href="/categories/wordpress-rest-api/" class="category-chain-item">wordpress-rest-api</a>
   
   
 
@@ -318,8 +348,8 @@ style.css - 主样式文件
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>一.PHP主题开发教学</div>
-      <div>http://example.com/2023/02/08/wordpress/PHP主题开发学习/一PHP主題開發教學/</div>
+      <div>jwt插件獲取api的token</div>
+      <div>http://example.com/2023/02/11/wordpress/wp_rest_api/jwt-獲取token/</div>
     </div>
     <div class="license-meta">
       
@@ -331,7 +361,7 @@ style.css - 主样式文件
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 8, 2023</div>
+          <div>February 11, 2023</div>
         </div>
       
       
@@ -363,9 +393,9 @@ style.css - 主样式文件
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/02/09/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E8%A3%BD%E4%BD%9C%E9%A6%96%E9%A0%81%E7%9A%84%E4%B8%BB%E9%AB%94%E9%83%A8%E5%88%86/" title="二.製作首頁的主體部分">
+                      <a href="/2023/02/13/wordpress/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%EF%BC%881%EF%BC%89/" title="wordpress主题开发：1.简单主题开发">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">二.製作首頁的主體部分</span>
+                        <span class="hidden-mobile">wordpress主题开发：1.简单主题开发</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -373,8 +403,8 @@ style.css - 主样式文件
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/04/build_wordpress/" title="一.小皮环境集成客户端搭建wordpress">
-                        <span class="hidden-mobile">一.小皮环境集成客户端搭建wordpress</span>
+                      <a href="/2023/02/10/wordpress/%E9%98%BF%E9%87%8C%E9%9B%B2%E6%90%AD%E5%BB%BA%E5%AF%B6%E5%A1%94/%E6%90%AD%E5%BB%BA%E5%AF%B6%E5%A1%94/" title="搭建宝塔">
+                        <span class="hidden-mobile">搭建宝塔</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

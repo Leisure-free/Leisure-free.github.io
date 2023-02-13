@@ -16,21 +16,27 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一.学PHP主题开发的理由熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手  二.开始学习– 模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件最基础的wordperss 主题开发只需要两个文件index.php - 主题模版开发 style.css - 主样式文件  文件作用functions.php 菜单css沒生效的處理方法應用 css">
+    <meta name="description" content="本篇文章的根目录 解释 至关重要简单说根目录就是你放wordperss的文件目录跳转到这里 简易 wordpress主题开发一个简易的wordpress主题开发只需要两个文件   index.php 主模板文件  style.css 主样式文件， 控制着页面的外观  123456789101112    &#x2F;*    Theme Name: 风之始祖    Theme URI: http:&#x2F;&#x2F;wpl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一.PHP主题开发教学">
-<meta property="og:url" content="http://example.com/2023/02/08/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%B8%80PHP%E4%B8%BB%E9%A1%8C%E9%96%8B%E7%99%BC%E6%95%99%E5%AD%B8/index.html">
+<meta property="og:title" content="wordpress主题开发：1.简单主题开发">
+<meta property="og:url" content="http://example.com/2023/02/13/wordpress/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%EF%BC%881%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一.学PHP主题开发的理由熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手  二.开始学习– 模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件最基础的wordperss 主题开发只需要两个文件index.php - 主题模版开发 style.css - 主样式文件  文件作用functions.php 菜单css沒生效的處理方法應用 css">
+<meta property="og:description" content="本篇文章的根目录 解释 至关重要简单说根目录就是你放wordperss的文件目录跳转到这里 简易 wordpress主题开发一个简易的wordpress主题开发只需要两个文件   index.php 主模板文件  style.css 主样式文件， 控制着页面的外观  123456789101112    &#x2F;*    Theme Name: 风之始祖    Theme URI: http:&#x2F;&#x2F;wpl">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-02-08T07:05:12.725Z">
-<meta property="article:modified_time" content="2023-02-10T04:43:16.856Z">
+<meta property="og:image" content="http://example.com/data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/1.png">
+<meta property="og:image" content="http://example.com/data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/2.png">
+<meta property="og:image" content="http://example.com/data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/3.png">
+<meta property="og:image" content="http://example.com/data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/4.png">
+<meta property="article:published_time" content="2023-02-13T05:43:10.311Z">
+<meta property="article:modified_time" content="2023-02-13T07:45:21.319Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="wordpress、php">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/1.png">
   
   
   
-  <title>一.PHP主题开发教学 - Hexo</title>
+  <title>wordpress主题开发：1.简单主题开发 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="一.PHP主题开发教学"></span>
+            <span id="subtitle" data-typed-text="wordpress主题开发：1.简单主题开发"></span>
           
         </div>
 
@@ -207,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-08 15:05" pubdate>
-          February 8, 2023 pm
+        <time datetime="2023-02-13 13:43" pubdate>
+          February 13, 2023 pm
         </time>
       </span>
     
@@ -219,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          489 words
+          474 words
         
       </span>
     
@@ -230,7 +236,7 @@
         
         
         
-          5 mins
+          4 mins
         
       </span>
     
@@ -268,19 +274,23 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">一.PHP主题开发教学</h1>
+            <h1 style="display: none">wordpress主题开发：1.简单主题开发</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="一-学PHP主题开发的理由"><a href="#一-学PHP主题开发的理由" class="headerlink" title="一.学PHP主题开发的理由"></a>一.学PHP主题开发的理由</h1><pre><code class="hljs">熟悉个个文件的作用、从底层理解，以后无论接触到什么都能迅速上手
-</code></pre>
-<h1 id="二-开始学习"><a href="#二-开始学习" class="headerlink" title="二.开始学习"></a>二.开始学习</h1><p>–</p>
-<h3 id="模板添加-你网站根目录-wp-content-x2F-themes-x2F-新建主题文件"><a href="#模板添加-你网站根目录-wp-content-x2F-themes-x2F-新建主题文件" class="headerlink" title="模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件"></a>模板添加 你网站根目录 wp-content&#x2F;themes&#x2F;新建主题文件</h3><h2 id="最基础的wordperss-主题开发只需要两个文件"><a href="#最基础的wordperss-主题开发只需要两个文件" class="headerlink" title="最基础的wordperss 主题开发只需要两个文件"></a>最基础的wordperss 主题开发只需要两个文件</h2><pre><code class="hljs">index.php - 主题模版开发
-style.css - 主样式文件
-</code></pre>
-<h2 id="文件作用"><a href="#文件作用" class="headerlink" title="文件作用"></a>文件作用</h2><h3 id="functions-php-菜单"><a href="#functions-php-菜单" class="headerlink" title="functions.php 菜单"></a>functions.php 菜单</h3><h3 id="css沒生效的處理方法應用-css-文件"><a href="#css沒生效的處理方法應用-css-文件" class="headerlink" title="css沒生效的處理方法應用 css 文件"></a>css沒生效的處理方法應用 css 文件</h3><figure class="highlight php-template"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php-template"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&#x27;stylesheet&#x27;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="language-php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-title function_ invoke__">get_template_directory_uri</span>(); <span class="hljs-meta">?&gt;</span></span><span class="language-xml"><span class="hljs-tag"><span class="hljs-string">/styl.css&quot;</span>&gt;</span></span><br></code></pre></td></tr></table></figure>
-<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">get_header</span>(); <span class="hljs-meta">?&gt;</span>  <span class="hljs-comment">// 導入 請求頭 跟index.php統同級目錄下 創建 跟index.php 跟index.php寫底部信息</span><br><br>  &lt;div&gt;主体区域&lt;/div&gt;<br><br><br><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">get_footer</span>(); <span class="hljs-meta">?&gt;</span> <span class="hljs-comment">//導入 底部信息 跟index.php統同級目錄下 創建 footer.php 在footer.php寫底部信息</span><br></code></pre></td></tr></table></figure>
+                <h2 id="本篇文章的根目录-解释-至关重要"><a href="#本篇文章的根目录-解释-至关重要" class="headerlink" title="本篇文章的根目录 解释 至关重要"></a>本篇文章的根目录 解释 至关重要</h2><h2 id="简单说根目录就是你放wordperss的文件目录"><a href="#简单说根目录就是你放wordperss的文件目录" class="headerlink" title="简单说根目录就是你放wordperss的文件目录"></a>简单说根目录就是你放wordperss的文件目录<br><img src="/../../../data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/1.png" srcset="/img/loading.gif" lazyload alt="1"></h2><p>跳转到这里<br><img src="/../../../data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/2.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="简易-wordpress主题开发"><a href="#简易-wordpress主题开发" class="headerlink" title="简易 wordpress主题开发"></a>简易 wordpress主题开发</h2><p>一个简易的wordpress主题开发只需要两个文件 </p>
+<ul>
+<li><p>index.php 主模板文件</p>
+</li>
+<li><p>style.css 主样式文件， 控制着页面的外观</p>
+ <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs php">    <span class="hljs-comment">/*</span><br><span class="hljs-comment">    Theme Name: 风之始祖</span><br><span class="hljs-comment">    Theme URI: http://wplearning.org/</span><br><span class="hljs-comment">    Description: 相关描述</span><br><span class="hljs-comment">        Author: 风之始祖</span><br><span class="hljs-comment">    Author URI: http://wplearning.org/</span><br><span class="hljs-comment">    details URI: http://wplearning.org/</span><br><span class="hljs-comment">    Version: 1.0.0</span><br><span class="hljs-comment">    License: 许可证</span><br><span class="hljs-comment">    License URI: http://www.gnu.org/licenses/gpl-2.0.html</span><br><span class="hljs-comment">    Tags: 标签显示在这里</span><br><span class="hljs-comment">*/</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<p> 这两个主题文件都是在，网站的根目录  路由 结构如下 根目录&#x2F;wp-content&#x2F;themes&#x2F;新建文件夹 </p>
+<h4 id="zhuti-是我自己手动创建的-此文件里面的内容都是手动创建"><a href="#zhuti-是我自己手动创建的-此文件里面的内容都是手动创建" class="headerlink" title="zhuti 是我自己手动创建的   此文件里面的内容都是手动创建"></a>zhuti 是我自己手动创建的   此文件里面的内容都是手动创建</h4><p><img src="/../../../data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/3.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="简易的主题创建成功-wordpress"><a href="#简易的主题创建成功-wordpress" class="headerlink" title="简易的主题创建成功 wordpress"></a>简易的主题创建成功 wordpress</h2><p><img src="/../../../data/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%80%E7%AE%80%E6%98%93/4.png" srcset="/img/loading.gif" lazyload></p>
+
                 
               </div>
             
@@ -298,7 +308,7 @@ style.css - 主样式文件
     
       <span class="category-chain">
         
-  <a href="/categories/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/" class="category-chain-item">PHP主题开发</a>
+  <a href="/categories/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/" class="category-chain-item">wordpress主题开发</a>
   
   
 
@@ -310,6 +320,13 @@ style.css - 主样式文件
     </div>
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/wordpress%E3%80%81php/">#wordpress、php</a>
+      
+    </div>
+  
 </div>
 
 
@@ -318,8 +335,8 @@ style.css - 主样式文件
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>一.PHP主题开发教学</div>
-      <div>http://example.com/2023/02/08/wordpress/PHP主题开发学习/一PHP主題開發教學/</div>
+      <div>wordpress主题开发：1.简单主题开发</div>
+      <div>http://example.com/2023/02/13/wordpress/wordpress主题开发/主题开发（1）/</div>
     </div>
     <div class="license-meta">
       
@@ -331,7 +348,7 @@ style.css - 主样式文件
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 8, 2023</div>
+          <div>February 13, 2023</div>
         </div>
       
       
@@ -363,9 +380,9 @@ style.css - 主样式文件
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/02/09/wordpress/PHP%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0/%E4%BA%8C%E8%A3%BD%E4%BD%9C%E9%A6%96%E9%A0%81%E7%9A%84%E4%B8%BB%E9%AB%94%E9%83%A8%E5%88%86/" title="二.製作首頁的主體部分">
+                      <a href="/2023/02/13/wordpress/wordpress%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91%EF%BC%882%EF%BC%89/" title="wordpress主题开发：2.制作首页">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">二.製作首頁的主體部分</span>
+                        <span class="hidden-mobile">wordpress主题开发：2.制作首页</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -373,8 +390,8 @@ style.css - 主样式文件
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/04/build_wordpress/" title="一.小皮环境集成客户端搭建wordpress">
-                        <span class="hidden-mobile">一.小皮环境集成客户端搭建wordpress</span>
+                      <a href="/2023/02/11/wordpress/wp_rest_api/jwt-%E7%8D%B2%E5%8F%96token/" title="jwt插件獲取api的token">
+                        <span class="hidden-mobile">jwt插件獲取api的token</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
